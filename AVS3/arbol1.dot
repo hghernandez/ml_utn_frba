@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Matches Played <= 15.0\nsamples = 34\nvalue = [14, 12, 4, 4]\nclass = Champions League", fillcolor="#fdf4ed"] ;
+1 [label="Matches Played <= 6.5\nsamples = 23\nvalue = [14, 1, 4, 4]\nclass = Champions League", fillcolor="#f1bd97"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Goals scored <= 1.5\nsamples = 11\nvalue = [3, 0, 4, 4]\nclass = Copa del Rey", fillcolor="#ffffff"] ;
+1 -> 2 ;
+3 [label="Matches Played <= 3.5\nsamples = 7\nvalue = [3, 0, 0, 4]\nclass = Supercopa de España", fillcolor="#f5cef8"] ;
+2 -> 3 ;
+4 [label="Goals scored <= 0.5\nsamples = 5\nvalue = [1, 0, 0, 4]\nclass = Supercopa de España", fillcolor="#e16aec"] ;
+3 -> 4 ;
+5 [label="samples = 2\nvalue = [1, 0, 0, 1]\nclass = Champions League", fillcolor="#ffffff"] ;
+4 -> 5 ;
+6 [label="samples = 3\nvalue = [0, 0, 0, 3]\nclass = Supercopa de España", fillcolor="#d739e5"] ;
+4 -> 6 ;
+7 [label="samples = 2\nvalue = [2, 0, 0, 0]\nclass = Champions League", fillcolor="#e58139"] ;
+3 -> 7 ;
+8 [label="samples = 4\nvalue = [0, 0, 4, 0]\nclass = Copa del Rey", fillcolor="#399de5"] ;
+2 -> 8 ;
+9 [label="Goals scored <= 2.0\nsamples = 12\nvalue = [11, 1, 0, 0]\nclass = Champions League", fillcolor="#e78c4b"] ;
+1 -> 9 ;
+10 [label="samples = 1\nvalue = [0, 1, 0, 0]\nclass = La Liga", fillcolor="#47e539"] ;
+9 -> 10 ;
+11 [label="samples = 11\nvalue = [11, 0, 0, 0]\nclass = Champions League", fillcolor="#e58139"] ;
+9 -> 11 ;
+12 [label="samples = 11\nvalue = [0, 11, 0, 0]\nclass = La Liga", fillcolor="#47e539"] ;
+0 -> 12 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
