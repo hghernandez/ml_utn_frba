@@ -1,6 +1,5 @@
 digraph Tree {
-node [shape=box, style="filled", color="black", fontname="helvetica"] ;
-edge [fontname="helvetica"] ;
+node [shape=box, style="filled", color="black"] ;
 0 [label="Matches Played <= 15.0\nsamples = 34\nvalue = [14, 12, 4, 4]\nclass = Champions League", fillcolor="#fdf4ed"] ;
 1 [label="Matches Played <= 6.5\nsamples = 23\nvalue = [14, 1, 4, 4]\nclass = Champions League", fillcolor="#f1bd97"] ;
 0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
